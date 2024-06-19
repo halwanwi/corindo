@@ -1,0 +1,133 @@
+body {
+    height: 2000px;
+}
+
+/* AWAL NAVIGASI */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+    /* background-color: var(--ac); */
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .logo {
+    display: flex;
+    align-items: center;
+}
+nav .container .logo img {
+    width: 54px;
+    filter: drop-shadow(-1px -1px 0px #ffffff)  
+    drop-shadow( 1px -1px 0px #ffffff)
+    drop-shadow(-1px 1px 0px #ffffff)
+    drop-shadow( 1px 1px 0px #ffffff)
+    drop-shadow(-2px -2px 0px #0000005e)  
+    drop-shadow( 2px -2px 0px #0000005e)
+    drop-shadow(-2px 2px 0px #0000005e)
+    drop-shadow( 2px 2px 0px #0000005e);
+    transition: .2s ease-in-out;
+}
+nav .container .logo img:hover {
+    filter: drop-shadow( -0px -1px 0px #ddeaf0)
+            drop-shadow( -1px -0px 0px #c0c8cd)
+            drop-shadow( -1px -2px 0px #b1babe)
+            drop-shadow( -2px -1px 0px #979fa4)
+            drop-shadow( -2px -3px 0px #808d93)
+            drop-shadow( -3px -2px 0px #666a6c);
+    translate: 5px 5px;
+}
+nav .container .logo .namaLogo {
+    display: none;
+}
+nav .container .link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+}
+nav .container .link p {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+nav .container .link p:hover {
+    position: relative;
+    transform: translateX(-8px) translateY(-5px);
+}
+nav .container .link a {
+    text-decoration: none;
+    color: var(--cb);
+    font-weight: 900;
+    font-size: 1.5em;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff,
+    -2px -2px 2px #0000005e,  
+    2px -2px 2px #0000005e,
+    -2px 2px 2px #0000005e,
+    2px 2px 2px #0000005e;
+    transition: .4s;
+}
+nav .container .link a:hover {
+    font-size: 1.55em;
+    text-shadow:
+    0 1px #808d93,
+    1px 0 #cdd2d5,
+    1px 2px #808d93,
+    2px 1px #cdd2d5,
+    2px 3px #808d93,
+    3px 2px #cdd2d5,
+    3px 4px #808d93,
+    4px 3px #cdd2d5,
+    4px 5px #808d93,
+    5px 4px #cdd2d5,
+    5px 6px #808d93,
+    6px 5px #cdd2d5,
+    6px 7px #808d93,
+    7px 6px #cdd2d5,
+    7px 8px #808d93,
+    8px 7px #cdd2d5;
+    /* -10px -10px 2px rgba(0, 0, 0, 0.123); */
+}
+/* AKHIR NAVIGASI */
+
+
+
+
+/* AWAL HEADER */
+header {
+    height: 100vh;
+    background-image: url(../img/ebatu.svg);
+    background-size: cover;
+    background-position: center;
+}
+/* AKHIR HEADER */
+
+
+
+h1 {
+    font-weight: 900;
+    color: var(--cb);
+    text-shadow:
+    0 1px #808d93,
+    -1px 0 #cdd2d5,
+    -1px 2px #808d93,
+    -2px 1px #cdd2d5,
+    -2px 3px #808d93,
+    -3px 2px #cdd2d5,
+    -3px 4px #808d93,
+    -4px 3px #cdd2d5,
+    -4px 5px #808d93,
+    -5px 4px #cdd2d5,
+    -5px 6px #808d93,
+    -6px 5px #cdd2d5,
+    -6px 7px #808d93,
+    -7px 6px #cdd2d5,
+    -7px 8px #808d93,
+    -8px 7px #cdd2d5,
+    -20px 19px 2px rgba(0, 0, 0, 0.243);
+}
