@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/font.css" />
 	<link rel="stylesheet" href="css/color.css" />
 	<link rel="stylesheet" href="css/navigasi.css" />
+	<link rel="stylesheet" href="css/animasi.css" />
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -16,18 +17,20 @@
 	<nav>
 		<div class="container">
 			<div class="logo">
-				<img src="img/logo/corindo1.png" alt="logo perusahaan" />
+				<img src="img/logo/corindo1.png" alt="logo perusahaan" draggable="false" />
 				<div class="namaLogo">
 					<h6>corindo</h6>
 					<p>Lorem ipsum dolor elit.</p>
 				</div>
 			</div>
 			<div class="link">
-				<p><a href="/">HOME</a></p>
-				<p><a href="/">ABOUT</a></p>
-				<p><a href="/">PRODUCT</a></p>
+				<p><a href="/">Home</a></p>
+				<p><a href="/">About</a></p>
+				<p><a href="/">Product</a></p>
+				<p><a href="/">Contact</a></p>
 			</div>
 		</div>
+		<div class="navBackground"></div>
 	</nav>
 
 	<header>
@@ -44,10 +47,26 @@
 				<img src="img/ruko-invert.jpg" alt="tempat kami" id="dua" class="posisiShow" />
 				<img src="img/ruko-merah.jpg" alt="tempat kami" id="tiga" class="posisiAppear" />
 			</div>
+			<div class="showIndicator">
+				<div class="indic indicatorSatu">
+					<div class="tindic"></div>
+				</div>
+				<div class="indic indicatorDua">
+					<div class="tindic"></div>
+				</div>
+				<div class="indic indicatorTiga">
+					<div class="tindic"></div>
+				</div>
+			</div>
 		</div>
 	</header>
 
-	<!-- <h1>CORINDO</h1> -->
+
+	<section class="content">
+		<div class="mask">
+		</div>
+		<article class="about"></article>
+	</section>
 
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/animasi.js"></script>

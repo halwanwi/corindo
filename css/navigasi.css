@@ -1,10 +1,14 @@
 /* AWAL NAVIGASI */
+
+/* navigasi saat posisi awal */
 nav {
     position: fixed;
     z-index: 999;
     width: 100%;
     padding: 20px 40px 20px 40px;
-    /* background-color: var(--ac); */
+    transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    transition: .2s;
+    user-select: none;
 }
 nav .container {
     display: flex;
@@ -42,7 +46,7 @@ nav .container .logo .namaLogo {
 nav .container .link {
     display: flex;
     justify-content: space-evenly;
-    width: 30vw;
+    width: 40vw;
 }
 nav .container .link p {
     padding: 5px 10px;
@@ -88,4 +92,90 @@ nav .container .link a:hover {
                 8px 7px #cdd2d5;
                 /* -10px -10px 2px rgba(0, 0, 0, 0.123); */
 }
+
+
+
+
+
+/* navigasi saat scroll kebawah */
+.navScroll {
+}
+
+nav::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: 0%;
+    background-color: var(--aa);
+    transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
+}
+nav.navScroll::before {
+    height: 100%;
+    box-shadow: 0px 0px 20px rgba(28, 28, 46, 0.3);
+}
+
+nav.navScroll .container .logo img {
+    width: 38px;
+    filter: drop-shadow(-1px -1px 0px #ffffff)  
+            drop-shadow( 1px -1px 0px #ffffff)
+            drop-shadow(-1px 1px 0px #ffffff)
+            drop-shadow( 1px 1px 0px #ffffff)       /*Membuat outline putih di logo*/
+            drop-shadow(-1px -1px 0px #0000005e)  
+            drop-shadow( 1px -1px 0px #0000005e)
+            drop-shadow(-1px 1px 0px #0000005e)
+            drop-shadow( 1px 1px 0px #0000005e);
+            transition: .2s ease-in-out;
+}
+
+nav.navScroll .container .logo img:hover {
+    filter: drop-shadow( -0px -1px 0px #ddeaf0)
+            drop-shadow( -1px -0px 0px #c0c8cd)
+            drop-shadow( -1px -2px 0px #b1babe)    /*Efek 3d saat di hover*/
+            drop-shadow( -2px -1px 0px #979fa4);
+    translate: 5px 5px;
+}
+
+nav.navScroll .container .link p {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+nav.navScroll .container .link p:hover {
+    position: relative;
+    transform: none;
+}
+nav.navScroll .container .link a {
+    text-decoration: none;
+    color: rgb(28, 28, 46);
+    font-weight: 900;
+    font-size: 1.3em;
+    letter-spacing: .1em;
+    text-shadow:-1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    -2px -2px 0px #0000005e,  
+    2px -2px 0px #0000005e,
+    -2px 2px 0px #0000005e,
+    2px 2px 0px #0000005e;
+    
+    transition: .1s;
+}
+nav.navScroll .container .link a:hover {
+    color: rgb(225, 225, 238);
+    text-shadow:-1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000,
+                -2px -2px 0px #ffffff5e,  
+                2px -2px 0px #ffffff5e,
+                -2px 2px 0px #ffffff5e,
+                2px 2px 0px #ffffff5e;
+}
+
+
+
 /* AKHIR NAVIGASI */

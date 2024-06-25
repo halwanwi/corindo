@@ -1,26 +1,20 @@
-html{
-    /* scrollbar-color: #2f2f2f #f6f6f6; */
-}
-
 body {
     height: 2000px;
     color: var(--cb);
+    background-image: url(../img/ebatu.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
 /* AWAL HEADER */
-nav {
-    /* display: none; */
-}
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url(../img/ebatu.svg);
-    background-size: cover;
-    background-position: center;
-    /* background-attachment: fixed; */
+    height: 110vh;
+    user-select: none;
 }
 header .container {
     display: flex;
@@ -29,8 +23,7 @@ header .container {
     width: 80vw;
     height: 100vh;
     padding-right: 4rem;
-    margin-top: 3rem; 
-    /* outline: auto; */
+    /* margin-top: -3rem; */
 }
 header .container .headTeks {
     width: 40vw;
@@ -84,13 +77,10 @@ header .container .showImage {
     align-items: center;
     max-height: 420px;
     min-width: 300px;
-    /* justify-content: center; */
-    /* overflow: hidden; */
-    /* border: 3px solid orange; */
-    /* height: 420px; */
 }
 header .container .showImage img {
     height: 420px;
+    pointer-events: none;
 }
 header .container .showImage img#satu {
 }
@@ -103,6 +93,7 @@ header .container .showImage img.posisiAppear {
     position: absolute;
     z-index: 0;
     scale: 1.11111;
+    opacity: 0;
     border-radius: 30px;
     filter: blur(10px);
 }
@@ -112,6 +103,7 @@ header .container .showImage img.posisiShow {
     scale: 1.11111;
     border-radius: 30px;
     filter: blur(10px);
+    opacity: .5;
 }
 header .container .showImage img.posisiHide {
     position: absolute;
@@ -132,80 +124,61 @@ header .container .showImage img.hide {
     animation: slideHideImage 3s forwards;
     animation-timing-function: cubic-bezier(0.53,0.57,0.25,0.89);
 }
+
+
+header .container .showIndicator {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 20px;
+    background-color: #ffffff00;
+    /* border: 2px solid black; */
+    position: absolute;
+    bottom: 50px;
+}
+header .container .showIndicator .indic {
+    width: 20px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(45, 45, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header .container .showIndicator .indic .tindic {
+    transition: .7s;
+    border-radius: 50%;
+    background-color: rgb(28, 28, 28);
+    width: 0%;
+    height: 0%;
+}
+header .container .showIndicator .indic .tindic.Active {
+    background-color: rgb(28, 28, 28);
+    width: 85%;
+    height: 85%;
+}
 /* AKHIR HEADER */
 
 
-/*KUMPULAN ANIMASI*/
 
-@keyframes slideHideImage {
-    0% {
-        transform: translateX(25px);
-        /* filter: blur(0); */
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-        scale: 1.11111;
-        transform: translateX(50px);
-        filter: blur(2px);
-    }
+/* SECTION ABOUT */
+
+.content {
+    height: 700px;
 }
-@keyframes slideShowImage {
-    0% {
-        scale: 1.11111;
-        filter: blur(10px);
-        transform: translateX(0);
-    }
-    50% {
-        filter: blur(.5px);
-    }
-    100% {
-        scale: 1;
-        filter: blur(0);
-        transform: translateX(25px);
-    }
+.content .mask {
+    height: 185px;
+    background-color: var(--aa);
+    clip-path: polygon(64% 97%, 100% 0, 100% 100%, 0 100%, 0 0);
+    position: relative;
 }
-@keyframes slideAppearImage {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        scale: 1.11111;
-        filter: blur(10px);
-    }
+
+.content .about {
+    height: 400px;
+    background-color: var(--aa);
 }
 
 
-/*AKHIR KUMPULAN ANIMASI*/
-
-
-
-/* h1 {
-    font-weight: 900;
-    color: var(--cb);
-    text-shadow:
-    0 1px #808d93,
-    -1px 0 #cdd2d5,
-    -1px 2px #808d93,
-    -2px 1px #cdd2d5,
-    -2px 3px #808d93,
-    -3px 2px #cdd2d5,
-    -3px 4px #808d93,
-    -4px 3px #cdd2d5,
-    -4px 5px #808d93,
-    -5px 4px #cdd2d5,
-    -5px 6px #808d93,
-    -6px 5px #cdd2d5,
-    -6px 7px #808d93,
-    -7px 6px #cdd2d5,
-    -7px 8px #808d93,
-    -8px 7px #cdd2d5,
-    -20px 19px 2px rgba(0, 0, 0, 0.243);
-} */
+/* AKHIR SECTION ABOUT */
