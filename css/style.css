@@ -3,7 +3,6 @@ body {
     color: var(--cb);
     background-image: url(../img/ebatu.svg);
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
 }
 
@@ -163,22 +162,150 @@ header .container .showIndicator .indic .tindic.Active {
 
 
 
-/* SECTION ABOUT */
-
+/* SECTION */
 .content {
-    height: 700px;
+    height: 2000px;
 }
-.content .mask {
+.content::before {
+    content: '';
+    display: block;
     height: 185px;
     background-color: var(--aa);
     clip-path: polygon(64% 97%, 100% 0, 100% 100%, 0 100%, 0 0);
     position: relative;
 }
-
-.content .about {
-    height: 400px;
+.content .background {
     background-color: var(--aa);
 }
+.content h2 {
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 3px;
+}
 
+/* SECTION PRODUCT */
+.content .product {
+    padding-top: 5rem;
+}
+.content .product .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.content .product .container .back {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+.content .product .container .back img {
+    width: 100%;
+}
+.content .product .container .next {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+.content .product .container .next img {
+    width: 100%;
+}
+.content .product .container .slideShowProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    /* height: 100px; */
+    /* background-color: green; */
+}
+.content .product .container .slideShowProduct .slideProduct {
+    width: 180px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(40, 40, 40, 0.5),
+     2px -2px 5px rgba(40, 40, 40, 0.5),
+     -2px 2px 5px rgba(40, 40, 40, 0.5),
+     -2px -2px 5px rgba(40, 40, 40, 0.5);
+    border-radius: 10px;
+}
+.content .product .container .slideShowProduct .slideProduct.productSatu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -60px;
+}
+.content .product .container .slideShowProduct .slideProduct.productSatu img {
+    width: 50%;
+}
+.content .product .container .slideShowProduct .slideProduct.productDua {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    scale: 1.3;
+}
+.content .product .container .slideShowProduct .slideProduct.productDua img {
+    width: 50%;
+}
+.content .product .container .slideShowProduct .slideProduct.productTiga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -60px;
+}
+.content .product .container .slideShowProduct .slideProduct.productTiga img {
+    width: 50%;
+}
+/* AKHIR SECTION PRODUCT */
 
-/* AKHIR SECTION ABOUT */
+/* SECTION CONTACT */
+.content .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+.content .contact .container{
+    display: flex;
+    background-color: brown;
+    height: 450px;
+    width: 85vw;
+    margin-top: 5rem;
+}
+.content .contact .container .map {
+    width: 70%;
+    height: 100%;
+    background-color: cadetblue;
+}
+.content .contact .container .details {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(39, 65, 66);
+    color: var(--aa);
+    padding: 2rem;
+}
+.content .contact .container .details h3{
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.content .contact .container .details p{
+    display: flex;
+    align-items: center;
+    line-height: 1.5rem;
+}
+.content .contact .container .details p.address{
+    margin-bottom: 2rem;
+}
+.content .contact .container .details p.telephone{
+    margin-bottom: 1rem;
+}
+.content .contact .container .details p i{
+    margin-right: 1rem;
+    font-size: 2rem
+}
+/* AKHIR SECTION CONTACT */
