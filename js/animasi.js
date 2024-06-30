@@ -1,3 +1,4 @@
+// SLIDESHOW DI HEADER
 $(document).ready(function () {
     var pertamaKali = true;
     var cekUrutan = 2;
@@ -91,6 +92,58 @@ $(document).ready(function () {
 
 
 });
+// AKHIR SLIDESHOW DI HEADER
+
+
+
+
+
+// SLIDESHOW DI PRODUCT
+const backProduct = $('.back');
+let imageActive = 2;
+
+$('.back').click(function (e) { 
+    e.preventDefault();
+    let imageBefore = imageActive +1;
+    if (imageActive <= 1){ imageActive = 3 } else{ imageActive-- }
+    console.log($('.product .container .slideShowProduct div:nth-child('+ imageActive +')'));
+    $('.Kiri').removeClass('Kiri');
+    $('.Kanan').addClass('Kiri');
+    $('.Kanan').removeClass('Kanan zindex');
+    $('.Aktif').addClass('Kanan zindex');
+    $('.Aktif').removeClass('Aktif');
+    $('.product .container .slideShowProduct div:nth-child('+ imageActive +')').toggleClass('Aktif');
+    $('.content .product .container .slideShowProduct .slideProduct.Aktif').removeClass('zindex');
+});
+$('.next').click(function (e) { 
+    e.preventDefault();
+    if (imageActive >= 3){ imageActive = 1 } else{ imageActive++ }
+    console.log($('.product .container .slideShowProduct div:nth-child('+ imageActive +')'));
+    $('.Kanan').removeClass('Kanan');
+    $('.Kiri').addClass('Kanan');
+    $('.Kiri').removeClass('Kiri zindex');
+    $('.Aktif').addClass('Kiri zindex');
+    $('.Aktif').removeClass('Aktif');
+    $('.product .container .slideShowProduct div:nth-child('+ imageActive +')').toggleClass('Aktif');
+    $('.content .product .container .slideShowProduct .slideProduct.Aktif').removeClass('zindex');
+});
+
+
+
+
+
+
+
+// AKHIR SLIDESHOW DI PRODUCT
+
+
+
+
+
+
+
+
+
 
 
 // $(document).keydown(function(e) { 

@@ -1,0 +1,70 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: var(--aa);
+}
+footer h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+footer h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: .3rem;
+    letter-spacing: 1px;
+}
+footer p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1rem;
+    letter-spacing: 1px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--aa);
+}
+footer a:hover {
+    color: rgb(115, 0, 255);
+    font-weight: 400;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+footer .container div {
+    width: 350px;
+}
+footer .container .information {
+    padding: 2rem 0;
+}
+footer .container .information {
+}
+footer .container .information .detail {
+    margin-bottom: 1rem;
+}
+footer .container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .container .logo img {
+    width: 120px;
+}
+footer .container .navigasi {
+    padding: 2rem 0;
+}
+footer .container .navigasi p {
+    margin-bottom: 1rem;
+}
+
+
+footer .container .information .location table tr td:nth-child(2){
+    padding: 0 9px;
+}
+footer .container .information .location table {
+    text-align: left;
+}

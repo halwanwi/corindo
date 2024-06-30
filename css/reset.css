@@ -54,12 +54,12 @@ table {
 }
 /* Mengatur track scrollbar */
 ::-webkit-scrollbar-track {
-    background: rgb(110, 110, 110);
-    box-shadow: inset 1px 1px 7px rgb(251, 251, 251);
+    background: rgb(21, 21, 21);
+    /* box-shadow: inset 1px 1px 7px rgb(251, 251, 251); */
 }
 /* Mengatur thumb scrollbar */
 ::-webkit-scrollbar-thumb {
-    background: #111111;
+    background: #bababa;
     border-radius: 4px;
 }
 /* Mengatur thumb scrollbar saat di-hover */

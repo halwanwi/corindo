@@ -1,9 +1,11 @@
 body {
-    height: 2000px;
+    /* height: 2000px; */
     color: var(--cb);
     background-image: url(../img/ebatu.svg);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+}
+body::before{
 }
 
 
@@ -164,7 +166,7 @@ header .container .showIndicator .indic .tindic.Active {
 
 /* SECTION */
 .content {
-    height: 2000px;
+    /* height: 2000px; */
 }
 .content::before {
     content: '';
@@ -214,13 +216,17 @@ header .container .showIndicator .indic .tindic.Active {
 .content .product .container .next img {
     width: 100%;
 }
+.back:hover, .next:hover {
+    cursor: pointer;
+}
 .content .product .container .slideShowProduct {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60vw;
-    /* height: 100px; */
+    min-height: 200px;
     /* background-color: green; */
+    position: relative;
 }
 .content .product .container .slideShowProduct .slideProduct {
     width: 180px;
@@ -231,36 +237,46 @@ header .container .showIndicator .indic .tindic.Active {
      -2px 2px 5px rgba(40, 40, 40, 0.5),
      -2px -2px 5px rgba(40, 40, 40, 0.5);
     border-radius: 10px;
-}
-.content .product .container .slideShowProduct .slideProduct.productSatu {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -60px;
+    position: absolute;
+    transition: scale .9s cubic-bezier(0.23, 1, 0.320, 1), transform 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
-.content .product .container .slideShowProduct .slideProduct.productSatu img {
+.content .product .container .slideShowProduct .slideProduct img {
     width: 50%;
+}
+
+
+.content .product .container .slideShowProduct .slideProduct.productSatu {
 }
 .content .product .container .slideShowProduct .slideProduct.productDua {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    scale: 1.3;
-}
-.content .product .container .slideShowProduct .slideProduct.productDua img {
-    width: 50%;
 }
 .content .product .container .slideShowProduct .slideProduct.productTiga {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -60px;
 }
-.content .product .container .slideShowProduct .slideProduct.productTiga img {
-    width: 50%;
+
+
+.content .product .container .slideShowProduct .slideProduct.Aktif {
+    z-index: 2;
+    transform: translateX(0%);
+    scale: 1.3;
 }
+.content .product .container .slideShowProduct .slideProduct.Kanan {
+    transform: translateX(70%);
+}
+.content .product .container .slideShowProduct .slideProduct.Kiri {
+    transform: translateX(-70%);
+}
+.content .product .container .slideShowProduct .slideProduct.zindex {
+    z-index: 1;
+}
+
 /* AKHIR SECTION PRODUCT */
+
+
+
+
+
 
 /* SECTION CONTACT */
 .content .contact {
@@ -269,6 +285,7 @@ header .container .showIndicator .indic .tindic.Active {
     justify-content: center;
     align-items: center;
     margin-top: 15rem;
+    padding-bottom: 10rem;
 }
 .content .contact .container{
     display: flex;
