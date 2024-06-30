@@ -1,7 +1,7 @@
 body {
     /* height: 2000px; */
     color: var(--cb);
-    background-image: url(../img/ebatu.svg);
+    background-image: url(../img/background/tembok-batu.svg);
     background-size: cover;
     /* background-attachment: fixed; */
 }
