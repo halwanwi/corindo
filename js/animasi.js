@@ -127,13 +127,6 @@ $('.next').click(function (e) {
     $('.product .container .slideShowProduct div:nth-child('+ imageActive +')').toggleClass('Aktif');
     $('.content .product .container .slideShowProduct .slideProduct.Aktif').removeClass('zindex');
 });
-
-
-
-
-
-
-
 // AKHIR SLIDESHOW DI PRODUCT
 
 

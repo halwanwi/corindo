@@ -1,9 +1,10 @@
 body {
     /* height: 2000px; */
     color: var(--cb);
-    background-image: url(../img/background/tembok-batu.svg);
-    background-size: cover;
-    /* background-attachment: fixed; */
+    background-image: url(../img/background/kubus.svg);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: fixed;
 }
 body::before{
 }
@@ -191,6 +192,7 @@ header .container .showIndicator .indic .tindic.Active {
 /* SECTION PRODUCT */
 .content .product {
     padding-top: 5rem;
+    margin-bottom: 15rem;
 }
 .content .product .container {
     display: flex;
@@ -272,57 +274,3 @@ header .container .showIndicator .indic .tindic.Active {
 }
 
 /* AKHIR SECTION PRODUCT */
-
-
-
-
-
-
-/* SECTION CONTACT */
-.content .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15rem;
-    padding-bottom: 10rem;
-}
-.content .contact .container{
-    display: flex;
-    background-color: brown;
-    height: 450px;
-    width: 85vw;
-    margin-top: 5rem;
-}
-.content .contact .container .map {
-    width: 70%;
-    height: 100%;
-    background-color: cadetblue;
-}
-.content .contact .container .details {
-    width: 30%;
-    height: 100%;
-    background-color: rgb(39, 65, 66);
-    color: var(--aa);
-    padding: 2rem;
-}
-.content .contact .container .details h3{
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-.content .contact .container .details p{
-    display: flex;
-    align-items: center;
-    line-height: 1.5rem;
-}
-.content .contact .container .details p.address{
-    margin-bottom: 2rem;
-}
-.content .contact .container .details p.telephone{
-    margin-bottom: 1rem;
-}
-.content .contact .container .details p i{
-    margin-right: 1rem;
-    font-size: 2rem
-}
-/* AKHIR SECTION CONTACT */

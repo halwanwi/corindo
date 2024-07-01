@@ -1,0 +1,190 @@
+body {
+    position: relative;
+    color: var(--cb);
+}
+ul {
+    list-style: circle;
+    margin-left: 2rem;
+}
+ol {
+    list-style: decimal;
+    margin-left: 2rem;
+}
+ul li, ol li {
+    margin-bottom: 1rem;
+}
+
+
+header {
+    height: 90vh;
+    background-color: rgb(51, 51, 51);
+    background-image: url(../img/background/constructor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--aa);
+    background-blend-mode: soft-light;
+    clip-path: polygon(100% 0, 100% 45%, 66% 87%, 0 58%, 0 0);
+}
+header h1 {
+    margin-top: -5rem;
+    /* text-shadow: 0px 0px 11px rgba(144, 0, 255, 0.7); */
+    font-weight: 500;
+    font-size: 56px;
+}
+
+
+
+/* PENGENALAN PERUSAHAAN */
+.deskripsiPerusahaan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    margin-top: 2rem;
+    /* height: 500px; */
+    /* background-color: darkcyan; */
+}
+.deskripsiPerusahaan .container {
+    display: flex;
+    width: 90%;
+    margin-bottom: 5rem;
+    justify-content: center;
+    /* height: 300px; */
+    /* border: 2px solid silver; */
+}
+.deskripsiPerusahaan .container .gambaranUmum {
+    height: 100%;
+    width: 60%;
+    padding-right: 2rem;
+    /* background-color: burlywood; */
+}
+.gambaranUmum h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.gambaranUmum .tentangPerusahaan {
+    padding: 3rem 2rem;
+    /* background-color: aliceblue; */
+    /* box-shadow: 0px 0px 9px rgba(144, 0, 255, 0.7); */
+    border-radius: 5px;
+}
+.gambaranUmum .vimi {
+    display: flex;
+    margin-top: 1rem;
+}
+.visi, .misi {
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 5px rgba(144, 0, 255, 0.7);
+    border-radius: 5px;
+    background-image: url(../img/background/reverse-mountain.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow:0px 1px 0px rgb(255, 255, 255), 
+                0px -1px 0px rgb(255, 255, 255),
+                1px 0px 0px rgb(255, 255, 255),
+                -1px 0px 0px rgb(255, 255, 255);
+}
+.visi {
+    margin-right: 1.5rem;
+}
+
+.deskripsiPerusahaan .container .nilaiPerusahaan {
+    width: 30%;
+    padding: 3rem 2rem;
+    background-color: #D9D9D9;
+    background-image: url(../img/background/triangle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(66, 66, 66, .8);
+    border-radius: 5px;
+}
+.nilaiPerusahaan h2{
+    text-shadow:0px 1px 0px rgb(255, 255, 255), 
+                0px -1px 0px rgb(255, 255, 255),
+                1px 0px 0px rgb(255, 255, 255),
+                -1px 0px 0px rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+/* AKHIR PENGENALAN PERUSAHAAN */
+
+
+
+
+/* PENGENALAN TIM */
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.team h2 {
+    font-weight: 500;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 4px;
+    margin: 5rem 0 3rem;
+}
+
+.team .backgroundContainer {
+    background-color: #D9D9D9;
+    /* background-color: #444444; */
+    background-image: url(../img/background/kubus.svg);
+    /* background-attachment: fixed; */
+    box-shadow: inset 0 0 10px black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 0;
+}
+.team .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+.team .container .items {
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team .container .items div {
+    width: 250px;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfbfb;
+    box-shadow: 0px 0px 10px rgba(66, 66, 66, .8);
+    margin-bottom: 3rem;
+}
+.team .container .items div img {
+    width: 50%;
+}
+.team .container .items div h3 {
+    margin: 1rem 0 .2rem;
+    font-size: 24px;
+    font-weight: 500;
+}
+.team .container .items div p {
+    font-style: italic;
+    font-weight: 300;
+}
+/* AKHIR PENGENALAN TIM */
