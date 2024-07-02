@@ -1,5 +1,5 @@
 body {
-    position: relative;
+    /* position: relative; */
     color: var(--cb);
 }
 ul {
@@ -174,7 +174,18 @@ header h1 {
     background-color: #fbfbfb;
     box-shadow: 0px 0px 10px rgba(66, 66, 66, .8);
     margin-bottom: 3rem;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
+.team .container .items div:hover {
+    background-color: var(--cb);
+    box-shadow: 0px 0px 10px rgb(144, 0, 255, .8);
+    color: #D9D9D9;
+    cursor: pointer;
+}
+.team .container .items div:hover img {
+    filter: invert();
+}
+
 .team .container .items div img {
     width: 50%;
 }

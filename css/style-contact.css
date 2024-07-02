@@ -1,0 +1,92 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: var(--aa);
+    background-color: rgb(51, 51, 51);
+    background-image: url(../img/background/call-center.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-blend-mode: soft-light;
+    clip-path: polygon(100% 0, 100% 60%, 61% 90%, 0 50%, 0 0);
+}
+header h1 {
+    margin-top: -5rem;
+    font-weight: 500;
+    font-size: 56px;
+    /* text-shadow: 0px 0px 11px rgba(144, 0, 255, 0.7); */
+}
+
+
+
+.platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 5rem;
+    /* height: 70vh; */
+    /* border: 7px dotted cadetblue; */
+}
+.platform .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* height: 50%; */
+    /* border: 3px dashed slateblue; */
+}
+.platform .container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    margin: 2rem;
+    border-radius: 40px;
+    box-shadow: 0px 5px 10px rgba(66, 66, 66, .8);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.platform .container div img {
+    width: 50%;
+}
+.platform .container .whatsapp {
+    /* background-color: rgb(0, 170, 0); */
+    /* box-shadow: 0px 0px 30px rgb(13, 255, 0); */
+    /* box-shadow: inset 0px 0px 180px rgb(0, 255, 0); */
+    background-color: rgba(0, 200, 0, 0);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgb(0, 200, 0));
+    box-shadow: inset 0 0 0px rgb(0, 200, 0), inset 0 0 0px rgb(0, 0, 0), 0px 0px 10px rgba(66, 66, 66, .8);
+}
+.platform .container .whatsapp:hover {
+    background-color: rgba(0, 255, 0, 1);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgb(0, 200, 0));
+    box-shadow: inset 0 0 50px rgb(0, 200, 0), inset 0 0 5px rgb(0, 0, 0), 0px 10px 5px rgba(66, 66, 66, .3);
+    scale: 1.03;
+    translate: 0 -20px;
+}
+.platform .container .whatsapp:hover img {
+    filter: drop-shadow(0 0 20px white);
+}
+
+.platform .container .gmail {
+    /* background-color: rgb(225, 0, 0); */
+    /* box-shadow: 0px 0px 30px rgb(255, 0, 0); */
+    /* box-shadow: inset 0px 0px 180px rgb(255, 0, 0); */
+    background-color: rgba(200, 0, 0, 0);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgb(255, 50, 50));
+    box-shadow: inset 0 0 0px rgb(255, 50, 50), inset 0 0 0px rgb(0, 0, 0), 0px 0px 10px rgba(66, 66, 66, .8);
+}
+.platform .container .gmail:hover {
+    background-color: rgb(255, 50, 50);
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgb(255, 50, 50));
+    box-shadow: inset 0 0 50px rgb(255, 50, 50), inset 0 0 5px rgb(0, 0, 0), 0px 10px 5px rgba(66, 66, 66, .3);
+    scale: 1.03;
+    translate: 0 -20px;
+}
+.platform .container .gmail:hover img {
+    filter: drop-shadow(0 0 20px white);
+}

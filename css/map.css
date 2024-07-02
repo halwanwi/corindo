@@ -42,15 +42,24 @@
     display: flex;
     align-items: center;
     line-height: 1.5rem;
+    transition: .2s cubic-bezier(0.23, 1, 0.320, 1);
 }
 .contact .container .details p.address{
     margin-bottom: 2rem;
 }
 .contact .container .details p.telephone{
     margin-bottom: 1rem;
+    cursor: pointer;
+}
+.contact .container .details p.email {
+    cursor: pointer;
+}
+.contact .container .details p.telephone:hover,
+.contact .container .details p.email:hover {
+    color: goldenrod;
 }
 .contact .container .details p i{
     margin-right: 1rem;
-    font-size: 2rem
+    font-size: 1.5rem
 }
 /* AKHIR SECTION CONTACT */
