@@ -12,3 +12,11 @@ $(window).scroll(function () {
         $('nav').removeClass('navScroll');
     }
 });
+
+
+$('.mobile-menu .menu').click(function (e) { 
+    e.preventDefault();
+    $('nav .link').toggleClass('Aktif');
+    $('nav .container').toggleClass('ShadowLink');
+    $('.menu').toggleClass('bi-x-lg');
+});
