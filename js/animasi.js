@@ -35,7 +35,7 @@ $(document).ready(function () {
 
         cekUrutan = 1;
         pertamaKali = false;
-    }, 6000);
+    }, 10000);
     
 
     setInterval(() => {
@@ -47,7 +47,7 @@ $(document).ready(function () {
         } else {
             selesaiHide = false;
         }
-    }, 2000);
+    }, 500);
 
 
     // Indicator
@@ -69,7 +69,7 @@ $(document).ready(function () {
         } else {
             $('.indicatorTiga .tindic').removeClass('Active');
         }
-    }, 1000);
+    }, 500);
     
     $('.indicatorSatu').click(function (e) { 
         e.preventDefault();

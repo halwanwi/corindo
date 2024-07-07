@@ -121,15 +121,15 @@ header .container .showImage img.posisiHide {
 
 header .container .showImage img.appear {
     animation: slideAppearImage 3s forwards;
-    animation-timing-function: cubic-bezier(0.53,0.57,0.25,0.89);
+    /* animation-timing-function: cubic-bezier(0.53,0.57,0.25,0.89); */
 }
 header .container .showImage img.show {
     animation: slideShowImage 3s forwards;
-    animation-timing-function: cubic-bezier(0.53,0.57,0.25,0.89);
+    /* animation-timing-function: cubic-bezier(0.53,0.57,0.25,0.89); */
 }
 header .container .showImage img.hide {
     animation: slideHideImage 3s forwards;
-    animation-timing-function: cubic-bezier(0.53,0.57,0.25,0.89);
+    /* animation-timing-function: cubic-bezier(0.53,0.57,0.25,0.89); */
 }
 
 

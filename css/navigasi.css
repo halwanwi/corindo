@@ -105,7 +105,8 @@ nav::before {
     z-index: -1;
     height: 0%;
     background-color: var(--aa);
-    transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
+    /* transition: 1s cubic-bezier(0.23, 1, 0.320, 1); */
+    transition: 1s;
 }
 nav.navScroll::before {
     height: 100%;
@@ -187,7 +188,8 @@ nav.navScroll .container .link a:hover {
         top: 0;
         z-index: -2;
         box-shadow: 0px 0px 20px rgba(28, 28, 46, 0.3);
-        transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+        /* transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1); */
+        transition: 1s;
     }
     nav .container.ShadowLink::after {
         right: 0;
@@ -201,7 +203,8 @@ nav.navScroll .container .link a:hover {
         padding: 7rem 0 0 0;
         z-index: -1;
         background-color: #fff;
-        transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+        /* transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1); */
+        transition: 1s;
     }
     nav .container .link.Aktif {
         right: 0;
