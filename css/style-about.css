@@ -30,10 +30,9 @@ header {
     clip-path: polygon(100% 0, 100% 45%, 66% 87%, 0 58%, 0 0);
 }
 header h1 {
-    margin-top: -5rem;
-    /* text-shadow: 0px 0px 11px rgba(144, 0, 255, 0.7); */
+    /* margin-top: -5rem;
     font-weight: 500;
-    font-size: 56px;
+    font-size: 56px; */
 }
 
 
@@ -199,3 +198,76 @@ header h1 {
     font-weight: 300;
 }
 /* AKHIR PENGENALAN TIM */
+
+
+
+
+
+/* RESPONSIF */
+
+/* PENYESUAIAN DI TABLET */
+@media screen and (max-width: 1022px) {
+    .deskripsiPerusahaan .container {
+        flex-direction: column;
+    }
+    .deskripsiPerusahaan .container .gambaranUmum {
+        width: unset;
+        padding: unset;
+        margin-bottom: 2rem;
+    }
+    .deskripsiPerusahaan .container .nilaiPerusahaan {
+        width: unset;
+    }
+    .deskripsiPerusahaan .container .gambaranUmum .vimi {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .visi, .misi {
+        width: 48%;
+    }
+    .visi {
+        margin: unset;
+    }
+}
+
+/* PENYESUAIAN DI MOBILE */
+@media screen and (max-width: 767px) {
+    header {
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 590px) {
+    .deskripsiPerusahaan .container .gambaranUmum .vimi {
+        flex-direction: column;
+    }
+    .visi, .misi {
+        width: 100%;
+    }
+    .visi {
+        margin-bottom: 1rem;
+    }
+
+    .deskripsiPerusahaan .gambaranUmum h3, .deskripsiPerusahaan h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+/* RESPONSIF BAGIAN TEAM */
+@media screen and (max-width: 1118px) {
+    .team .container { width: 80% }
+}
+@media screen and (max-width: 1022px) {
+    .team .container { width: 90% }
+}
+@media screen and (max-width: 880px) {
+    .team .container { width: 70% }
+    .team .container .items { width: 50% }
+    .team .container .items div { width: 85% }
+}
+@media screen and (max-width: 560px) {
+    .team .container { width: 70% }
+    .team .container .items { width: 99% }
+    .team .container .items div { width: 85% }
+}

@@ -68,3 +68,39 @@ footer .container .information .location table tr td:nth-child(2){
 footer .container .information .location table {
     text-align: left;
 }
+
+
+
+/* PENYESUAIAN DI TABLET */
+@media screen and (max-width: 1022px) {
+    footer {
+        overflow: hidden;
+    }
+    footer .container .logo img {
+        width: 90px;
+    }
+}
+@media screen and (max-width: 990px) {
+    footer .container .information .detail {
+        display: none;
+    }
+    footer .container .information {
+        width: 300px;
+    }
+}
+
+/* PENYESUAIAN DI MOBILE */
+@media screen and (max-width: 767px) {
+    footer .container .navigasi {
+        display: none;
+    }
+    footer .container {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    footer .container .logo {
+        padding-left: 1rem;
+        justify-content: start;
+        width: 250px;
+    }
+}

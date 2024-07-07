@@ -169,14 +169,14 @@ nav.navScroll .container .link a:hover {
 
 
 /* PENYESUAIAN DI TABLET */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1022px) {
     nav .container .link {
         width: 55vw;
     }
 }
 
 /* PENYESUAIAN DI MOBILE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     nav .container::after {
         content: '';
         position: absolute;
@@ -258,5 +258,9 @@ nav.navScroll .container .link a:hover {
         -1px 0px 0px rgba(255, 255, 255, 0.5),
         0px -1px 0px rgba(255, 255, 255, 0.5),
         0px 1px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    nav .container .logo img {
+        width: 32px;
     }
 }

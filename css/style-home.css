@@ -171,7 +171,6 @@ header .container .showIndicator .indic .tindic.Active {
 
 /* SECTION */
 .content {
-    /* height: 2000px; */
 }
 .content::before {
     content: '';
@@ -222,7 +221,7 @@ header .container .showIndicator .indic .tindic.Active {
 .content .product .container .next img {
     width: 100%;
 }
-.back:hover, .next:hover {
+.content .product .container .back:hover, .content .product .container .next:hover {
     cursor: pointer;
 }
 .content .product .container .slideShowProduct {
@@ -278,3 +277,35 @@ header .container .showIndicator .indic .tindic.Active {
 }
 
 /* AKHIR SECTION PRODUCT */
+
+
+
+
+/* RESPONSIF */
+
+/* PENYESUAIAN DI TABLET */
+@media screen and (max-width: 1022px) {
+}
+@media screen and (max-width: 990px) {
+    header .container {
+        /* flex-direction: column; */
+    }
+
+    .content .product .container .slideShowProduct .slideProduct {
+        width: 140px;
+        height: 160px;
+    }
+
+}
+
+/* PENYESUAIAN DI MOBILE */
+@media screen and (max-width: 767px) {
+    .content .product .container .back, .content .product .container .next {
+        z-index: 10;
+        /* opacity: .6; */
+        /* box-shadow: 0 0 5px black; */
+    }
+    .product .back img, .product .next img {
+        filter: drop-shadow(0 0 20px black);
+    }
+}

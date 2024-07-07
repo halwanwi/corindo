@@ -13,10 +13,9 @@ header {
     clip-path: polygon(100% 0, 100% 60%, 61% 90%, 0 50%, 0 0);
 }
 header h1 {
-    margin-top: -5rem;
-    font-weight: 500;
-    font-size: 56px;
-    /* text-shadow: 0px 0px 11px rgba(144, 0, 255, 0.7); */
+    /* margin-top: -5rem;
+    font-weight: 500; */
+    /* font-size: 56px; */
 }
 
 
@@ -89,4 +88,38 @@ header h1 {
 }
 .platform .container .gmail:hover img {
     filter: drop-shadow(0 0 20px white);
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIF */
+
+/* PENYESUAIAN DI TABLET */
+@media screen and (max-width: 1022px) {
+}
+@media screen and (max-width: 990px) {
+}
+
+/* PENYESUAIAN DI MOBILE */
+@media screen and (max-width: 767px) {
+
+    header {
+        height: 50vh;       
+    }
+
+    .platform .container {
+        width: 90%;
+    }
+    .platform .container div {
+        height: 150px;
+        width: 150px;
+        margin: 1rem;
+        border-radius: 30px;
+    }
 }

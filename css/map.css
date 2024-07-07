@@ -33,6 +33,7 @@
     background-color: rgb(39, 65, 66);
     color: var(--aa);
     padding: 2rem;
+    overflow: auto;
 }
 .contact .container .details h3{
     margin-bottom: 1rem;
@@ -62,4 +63,35 @@
     margin-right: 1rem;
     font-size: 1.5rem
 }
-/* AKHIR SECTION CONTACT */
+
+
+/* PENYESUAIAN DI TABLET */
+@media screen and (max-width: 1120px) {
+    .contact .container {
+        /* flex-direction: column; */
+    }
+    .contact .container .map {
+        width: 60%;
+    }
+    .contact .container .details {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 990px) {
+    .contact .container {
+        height: 600px;
+        flex-direction: column;
+    }
+    .contact .container .map {
+        width: 100%;
+        height: 65%;
+    }
+    .contact .container .details {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+/* PENYESUAIAN DI MOBILE */
+@media screen and (max-width: 767px) {
+}
