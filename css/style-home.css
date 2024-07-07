@@ -8,7 +8,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
     /* background-image: url(../img/background/kubus.svg); */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 body::before{
 }
@@ -28,7 +28,7 @@ header .container {
     align-items: center;
     width: 80vw;
     height: 100vh;
-    padding-right: 4rem;
+    padding-right: 9rem;
     /* margin-top: -3rem; */
 }
 header .container .headTeks {
@@ -82,10 +82,11 @@ header .container .showImage {
     display: flex;
     align-items: center;
     max-height: 420px;
-    min-width: 300px;
+    width: 300px;
 }
 header .container .showImage img {
-    height: 420px;
+    /* height: 420px; */
+    width: 400px;
     pointer-events: none;
 }
 header .container .showImage img#satu {
@@ -177,7 +178,8 @@ header .container .showIndicator .indic .tindic.Active {
     display: block;
     height: 185px;
     background-color: var(--aa);
-    clip-path: polygon(64% 97%, 100% 0, 100% 100%, 0 100%, 0 0);
+    /* clip-path: polygon(64% 97%, 100% 0, 100% 100%, 0 100%, 0 0); */
+    clip-path: polygon(50% 45%, 100% 0, 100% 100%, 0 100%, 0 0);
     position: relative;
 }
 .content .background {
@@ -284,6 +286,34 @@ header .container .showIndicator .indic .tindic.Active {
 /* RESPONSIF */
 
 /* PENYESUAIAN DI TABLET */
+@media screen and (max-width: 1119px) {
+    header .container {
+        padding: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        padding-top: 10rem;
+        margin-top: 10rem;
+    }
+    header .container .headTeks {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    header .container .showImage {
+        height: 300px;
+        margin-bottom: 3rem;
+        translate: -4rem 0;
+    }
+    header .container .showIndicator {
+        position: unset;
+    }
+
+    .content {
+        margin-top: 10rem;
+    }
+}
 @media screen and (max-width: 1022px) {
 }
 @media screen and (max-width: 990px) {
@@ -307,5 +337,22 @@ header .container .showIndicator .indic .tindic.Active {
     }
     .product .back img, .product .next img {
         filter: drop-shadow(0 0 20px black);
+    }
+    h1 {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 560px) {
+    header .container {
+        /* outline: auto;         */
+    }
+    header .container .showImage {
+        width: 100%;
+        translate: 1.5rem 0;
+        margin: auto;
+        /* outline: auto; */
+    }
+    header .container .showImage img {
+        width: 80%;
     }
 }
