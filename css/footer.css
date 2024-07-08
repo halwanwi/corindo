@@ -104,3 +104,9 @@ footer .container .information .location table {
         width: 250px;
     }
 }
+@media screen and (max-width: 479px) {
+    footer {
+        padding: 2rem 1rem;
+    }
+    footer .container .information .location {display: none}
+}

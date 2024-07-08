@@ -4,23 +4,28 @@ body {
     background-color: #ffffff;
     /* background-color: #DFDBE5; */
         /* UNTUK MEMBUAT PATTERN KOTAK KOTAK */
-background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.5'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+/* background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.5'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
     /* background-image: url(../img/background/kubus.svg); */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* background-attachment: fixed; */
 }
-body::before{
-}
-
 
 /* AWAL HEADER */
 header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 110vh;
     user-select: none;
+    background-color: rgb(29, 29, 29);
+    background-image: url(../img/background/gedung-4_1920x2880.jpg);
+    background-position: 0 -800px;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+    /* align-items: center; */
+    /* height: 140vh; */
+    /* background-color: rgb(51, 51, 51); */
+    /* background-blend-mode: luminosity; */
 }
 header .container {
     display: flex;
@@ -29,7 +34,7 @@ header .container {
     width: 80vw;
     height: 100vh;
     padding-right: 9rem;
-    /* margin-top: -3rem; */
+    margin-bottom: 20rem;
 }
 header .container .headTeks {
     width: 40vw;
@@ -38,14 +43,15 @@ header .container .headTeks h1 {
     /* font-size: 64px; */
     font-weight: 900;
     margin-bottom: 1.5rem;
-    text-shadow:-1px -1px 0 #ffffff,  /*outline*/
-                1px -1px 0 #ffffff,
-                -1px 1px 0 #ffffff,
-                1px 1px 0 #ffffff, 
-                -2px -2px 0 #ffffff,  
-                2px -2px 0 #ffffff,
-                -2px 2px 0 #ffffff,
-                2px 2px 0 #ffffff, 
+    /* color: rgb(255, 255, 255); */
+    text-shadow:-1px -1px 0 #fff,  /*outline*/
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff, 
+                -2px -2px 0 #fff,  
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                2px 2px 0 #fff,
                 0px 1px #808d93,        /*efek 3d*/
                 -1px 0px #cdd2d5,
                 -1px 2px #808d93,
@@ -68,10 +74,11 @@ header .container .headTeks p {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5rem;
-    text-shadow:-.7px -.7px 0 #ffffff,  
-                .7px -.7px 0 #ffffff,
-                -.7px .7px 0 #ffffff,
-                .7px .7px 0 #ffffff,          /*outline putih*/
+    color: rgb(230, 230, 230);
+    text-shadow:-.7px -.7px 0 #000,  
+                .7px -.7px 0 #000,
+                -.7px .7px 0 #000,
+                .7px .7px 0 #000,          /*outline putih*/
                 -1px -1px 2px #0000005e,  
                 1px -1px 2px #0000005e,
                 -1px 1px 2px #0000005e,
@@ -148,7 +155,7 @@ header .container .showIndicator .indic {
     height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0);
-    border: 3px solid rgb(45, 45, 45);
+    border: 3px solid rgb(230, 230, 230);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +169,7 @@ header .container .showIndicator .indic .tindic {
     height: 0%;
 }
 header .container .showIndicator .indic .tindic.Active {
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(230, 230, 230);
     width: 85%;
     height: 85%;
 }
@@ -172,14 +179,15 @@ header .container .showIndicator .indic .tindic.Active {
 
 /* SECTION */
 .content {
+    margin-top: 5rem;
 }
 .content::before {
     content: '';
     display: block;
-    height: 185px;
+    /* height: 185px; */
     background-color: var(--aa);
     /* clip-path: polygon(64% 97%, 100% 0, 100% 100%, 0 100%, 0 0); */
-    clip-path: polygon(50% 45%, 100% 0, 100% 100%, 0 100%, 0 0);
+    /* clip-path: polygon(50% 45%, 100% 0, 100% 100%, 0 100%, 0 0); */
     position: relative;
 }
 .content .background {
@@ -287,6 +295,9 @@ header .container .showIndicator .indic .tindic.Active {
 
 /* PENYESUAIAN DI TABLET */
 @media screen and (max-width: 1119px) {
+    header {
+        background-position: 0;
+    }
     header .container {
         padding: unset;
         flex-direction: column;
@@ -294,7 +305,7 @@ header .container .showIndicator .indic .tindic.Active {
         align-items: center;
         height: unset;
         padding-top: 10rem;
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
     header .container .headTeks {
         width: 80%;
@@ -317,8 +328,11 @@ header .container .showIndicator .indic .tindic.Active {
 @media screen and (max-width: 1022px) {
 }
 @media screen and (max-width: 990px) {
-    header .container {
-        /* flex-direction: column; */
+    header {
+        clip-path: polygon(100% 0, 100% 70%, 50% 85%, 0 70%, 0 0);
+    }
+    .content {
+        margin-top: unset;
     }
 
     .content .product .container .slideShowProduct .slideProduct {
@@ -330,6 +344,7 @@ header .container .showIndicator .indic .tindic.Active {
 
 /* PENYESUAIAN DI MOBILE */
 @media screen and (max-width: 767px) {
+    .content .product {padding-top: unset}
     .content .product .container .back, .content .product .container .next {
         z-index: 10;
         /* opacity: .6; */
@@ -354,5 +369,11 @@ header .container .showIndicator .indic .tindic.Active {
     }
     header .container .showImage img {
         width: 80%;
+    }
+}
+@media screen and (max-width: 460px) {
+    header .container {margin-top: 2rem}
+    header .container .headTeks {
+        margin-bottom: 12px;
     }
 }
