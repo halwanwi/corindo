@@ -358,6 +358,9 @@ header .container .showIndicator .indic .tindic.Active {
     }
 }
 @media screen and (max-width: 560px) {
+    header {
+        background-image: url(../img/background/gedung-4_640x960.jpg);
+    }
     header .container {
         /* outline: auto;         */
     }

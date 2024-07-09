@@ -18,7 +18,7 @@ ul li, ol li {
 header {
     height: 90vh;
     background-color: rgb(51, 51, 51);
-    background-image: url(../img/background/constructor.jpg);
+    background-image: url(../img/background/constructor_1920x1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
@@ -267,6 +267,7 @@ header h1 {
     .team .container .items div { width: 85% }
 }
 @media screen and (max-width: 560px) {
+    header { background-image: url(../img/background/constructor_640x427.jpg) }
     .team .container { width: 70% }
     .team .container .items { width: 99% }
     .team .container .items div { width: 85% }
